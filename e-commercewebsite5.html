@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>E-commerce website5</title>
+  <link href="commerce.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <div class="box1">
+    <button class="box2" id="zero" onclick="refreshPage()"
+      style="border:none;background-color: rgb(87, 112, 112);text-decoration:none;color:white;font-family:cursive;font-size:30px">A@rvi's&nbsp;<span
+        style="color:aqua;font-size:30px;font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif">in</span>
+    </button>
+    <a class="box3" href="e-commercewebsite1.html" id="men"><i class="fa fa-male"></i> Men</a>
+    <a class="box3" href="e-commercewebsite2.html" id="women"><i class="fa fa-female"></i> Women</a>
+    <a class="box3" href="e-commercewebsite3.html" id="children"><i class="fa fa-child"></i> Children</a>
+    <a class="box3" href="e-commercewebsite.html" id="one"><i class="fa fa-home"></i> Home</a>
+    <a class="box3" id="two"><i class="fa fa-shopping-cart"></i> Bag</a>
+    <a class="box3" id="three"><i class="fa fa-heart"></i> Whishlist</a>
+    <a class="box3" href="e-commercewebsite5.html" id="four"><i class="fa fa-info-circle"></i> About</a>
+    <a class="box3" href="e-commercewebsite4.html" id="five"><i class="fa fa-address-book"></i> Contact</a>
+  </div>
+  <br><br>
+  <h1 style="color:firebrick">About Us</h1>
+  <p style="color:black; font-size:large">Welcome to our e-commerce website! We are a team of dedicated professionals
+    who are passionate about bringing you the best selection of products at affordable prices. Our goal is to make
+    shopping online easy, convenient, and enjoyable for our customers.
+
+    <br><br> We offer a wide range of products in various categories, including electronics, home goods, fashion, and
+    more. Our team works hard to ensure that we have a diverse and high-quality selection for you to choose from. We
+    also offer fast shipping and excellent customer service to make sure you have a seamless shopping experience with
+    us.
+
+    <br><br>Thank you for choosing to shop with us. We hope you find everything you need and more on our website. If you
+    have any questions or need assistance, please don't hesitate to reach out to us. We are here to help!
+  </p>
+
+  <script>
+    var orders = localStorage.getItem('orders');
+    var itemsting = localStorage.getItem('orderitems');
+    var orderitems = JSON.parse(itemsting);
+    var wishes = localStorage.getItem('wishes');
+    var wishstr = localStorage.getItem('wishlist');
+    var wishlist = JSON.parse(wishstr);
+    ordersn = orders;
+    wishesn = wishes;
+    localStorage.setItem('orders', ordersn);
+    localStorage.setItem('orderitems', JSON.stringify(orderitems));
+    localStorage.setItem('wishes', wishesn);
+    localStorage.setItem('wishlist', JSON.stringify(wishlist));
+  </script>
+
+  <br><br><br>
+  <script>
+    function refreshPage() {
+      window.location.reload();
+    } 
+  </script>
+
+</body>
+
+</html>

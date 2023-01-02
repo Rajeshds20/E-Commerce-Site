@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>E-commerce website4</title>
+  <link href="commerce.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    td img {
+      border-radius: 50%;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box1">
+    <button class="box2" id="zero" onclick="refreshPage()"
+      style="border:none;background-color: rgb(87, 112, 112);text-decoration:none;color:white;font-family:cursive;font-size:30px">A@rvi's&nbsp;<span
+        style="color:aqua;font-size:30px;font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif">in</span>
+    </button>
+    <a class="box3" href="e-commercewebsite1.html" id="men"><i class="fa fa-male"></i> Men</a>
+    <a class="box3" href="e-commercewebsite2.html" id="women"><i class="fa fa-female"></i> Women</a>
+    <a class="box3" href="e-commercewebsite3.html" id="children"><i class="fa fa-child"></i> Children</a>
+    <a class="box3" href="e-commercewebsite.html" id="one"><i class="fa fa-home"></i> Home</a>
+    <a class="box3" id="two"><i class="fa fa-shopping-cart"></i> Bag</a>
+    <a class="box3" id="three"><i class="fa fa-heart"></i> Whishlist</a>
+    <a class="box3" href="e-commercewebsite5.html" id="four"><i class="fa fa-info-circle"></i> About</a>
+    <a class="box3" href="e-commercewebsite4.html" id="five"><i class="fa fa-address-book"></i> Contact</a>
+  </div>
+  <br /><br />
+
+  <table style="border:2px transparent; background-color: rgba(40, 75, 68, 0.5); color: #fff;" width="60%"
+    height="400px" align="center">
+    <th colspan="2">
+      <h1 style="color:white;font-family:cursive;font-size:30px">A@rvi's&nbsp;<span
+          style="color:aqua;font-size:30px;font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif">in</span>
+      </h1>
+      <h3 style="color:rgb(41, 52, 129); font-family:algerian; font-size:xx-large">Contact Details</h3>
+    </th>
+    <tr>
+      <td>
+        <img src="D:/js/hacker.jpeg" alt="Avatar" style="width:150px">
+        <h5 style="color:white; font-family:monospaced; font-size:larger">
+          <center>Name :G.Aishwarya Reddy</center>
+        </h5>
+        <h5 style="color:white; font-family:monospaced; font-size:larger">
+          <center>College :JNTUA College</center>
+        </h5>
+        <h5 style="color:white; font-family:monospaced; font-size:larger">
+          <center>Email id :aishu.gopal535@gmail.com</center>
+        </h5>
+        <h5 style="color:white; font-family:monospaced; font-size:larger">
+          <center>Linkedin :@aishugopal</center>
+        </h5>
+        <h5 style="color:white; font-family:monospaced; font-size:larger">
+          <center>Phone no :9160xxxxxx</center>
+        </h5>
+      </td>
+      <td>
+        <img src="D:/js/hacker.jpeg" alt="Avatar" style="width:150px">
+        <h5 style="color:white; font-family:monospaced; font-size:larger">
+          <center>Name :D.S.Rajesh</center>
+        </h5>
+        <h5 style="color:white; font-family:monospaced; font-size:larger">
+          <center>College :JNTUA College</center>
+        </h5>
+        <h5 style="color:white; font-family:monospaced; font-size:larger">
+          <center>Email id :dsrajesh71@gmail.com</center>
+        </h5>
+        <h5 style="color:white; font-family:monospaced; font-size:larger">
+          <center>Linkedin :@devangamsajjarajesh</center>
+        </h5>
+        <h5 style="color:white; font-family:monospaced; font-size:larger">
+          <center>Phone no :8688xxxxxx</center>
+        </h5>
+      </td>
+    </tr>
+  </table>
+
+  <script>
+    var orders = localStorage.getItem('orders');
+    var itemsting = localStorage.getItem('orderitems');
+    var orderitems = JSON.parse(itemsting);
+    var wishes = localStorage.getItem('wishes');
+    var wishstr = localStorage.getItem('wishlist');
+    var wishlist = JSON.parse(wishstr);
+    ordersn = orders;
+    wishesn = wishes;
+    localStorage.setItem('orders', ordersn);
+    localStorage.setItem('orderitems', JSON.stringify(orderitems));
+    localStorage.setItem('wishes', wishesn);
+    localStorage.setItem('wishlist', JSON.stringify(wishlist));
+  </script>
+
+  <br><br><br>
+  <script>
+    function refreshPage() {
+      window.location.reload();
+    } 
+  </script>
+
+</body>
+
+</html>

@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>E-commerce website1</title>
+  <link href="commerce.css" rel="stylesheet" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+  <link rel="manifest" href="favicon/site.webmanifest">
+  <link rel="stylesheet" href="popup.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+  <div class="box1">
+    <button class="box2" id="zero" onclick="refreshPage()"
+      style="border:none;background-color: rgb(87, 112, 112);text-decoration:none;color:white;font-family:cursive;font-size:30px">A@rvi's&nbsp;<span
+        style="color:aqua;font-size:30px;font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif">in</span>
+    </button>
+    <a class="box3" href="e-commercewebsite1.html" id="men"><i class="fa fa-male"></i> Men</a>
+    <a class="box3" href="e-commercewebsite2.html" id="women"><i class="fa fa-female"></i> Women</a>
+    <a class="box3" href="e-commercewebsite3.html" id="children"><i class="fa fa-child"></i> Children</a>
+    <a class="box3" href="e-commercewebsite.html" id="one"><i class="fa fa-home"></i> Home</a>
+    <a class="box3" onclick="loadcart()" id="two"><i class="fa fa-shopping-cart"></i> Bag</a>
+    <a class="box3" id="three"><i class="fa fa-heart"></i> Whishlist</a>
+    <a class="box3" href="e-commercewebsite5.html" id="four"><i class="fa fa-info-circle"></i> About</a>
+    <a class="box3" href="e-commercewebsite4.html" id="five"><i class="fa fa-address-book"></i> Contact</a>
+  </div>
+  <h1 style="color: darkslategray" align="left">Explore the styles</h1>
+  <div class="container1" style="width: 100%">
+    <div class="container2">
+      <div class="container">
+        <img style="width: 97%" src="https://th.bing.com/th/id/OIP.a3E_6tAlKxtdvstsl9ovEQHaMi?pid=ImgDet&rs=1"
+          alt="Avatar" class="image" />
+        <div class="overlay">
+          <div class="text">
+            MRP - <strike style="color: red">1800</strike>
+            <span style="color: green"><b>&#x20B9;1400</b></span> <br />flat
+            33.33% off
+          </div>
+        </div>
+      </div>
+    </div>
+    <span class="container2">
+      <span class="container">
+        <img style="width: 97%" src="https://cdn03.nnnow.com/web-images/large/styles/ALC1EFBNETA/1653981630883/1.jpg"
+          alt="Avatar" class="image" />
+        <div class="overlay">
+          <div class="text">
+            MRP - <strike style="color: red">1200</strike>
+            <span style="color: green"><b>&#x20B9;1000</b></span> <br />flat
+            20% off
+          </div>
+        </div>
+      </span>
+    </span>
+    <span class="container2">
+      <span class="container">
+        <img style="width: 97%" src="https://th.bing.com/th/id/OIP.crdYkgS43huXoQRLIb45_AHaLF?pid=ImgDet&rs=1"
+          alt="Avatar" class="image" />
+        <div class="overlay">
+          <div class="text">
+            MRP - <strike style="color: red">1500</strike>
+            <span style="color: green"><b>&#x20B9;1000</b></span> <br />flat
+            34% off
+          </div>
+        </div>
+      </span>
+    </span>
+    <span class="container2">
+      <span class="container">
+        <img style="width: 97%"
+          src="https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1652179370_5518051.jpg?format=webp&w=480&dpr=1.3"
+          alt="Avatar" class="image" />
+        <div class="overlay">
+          <div class="text">
+            MRP - <strike style="color: red">2000</strike>
+            <span style="color: green"><b>&#x20B9;1500</b></span> <br />flat
+            28.73% off
+          </div>
+        </div>
+      </span>
+    </span>
+    <span class="container2">
+      <span align="center" class="container">
+        <img style="width: 97%" src="https://i.pinimg.com/originals/f3/90/aa/f390aa6e0376aaf0a1f84c18f7e1f841.jpg"
+          alt="Avatar" class="image" />
+        <div class="overlay">
+          <div class="text">
+            MRP - <strike style="color: red">1200</strike>
+            <span style="color: green"><b>&#x20B9;800</b></span> <br />flat
+            39.33% off
+          </div>
+          <!-- <div class="text">Jeans<br>MRP-&#x20B9;1000</div> -->
+        </div>
+      </span>
+    </span>
+  </div>
+
+  <div class="container1">
+    <div id="m11" class="container"><button onclick="addwish('m11')" class="additem"><i class="fa fa-heart"></i>
+        Whishlist</button>
+      <button onclick="additem('m11')" class="additem"><i class="fa fa-plus"></i> Add to Cart</button>
+    </div>
+    <div id="m12" class="container"><button onclick="addwish('m12')" class="additem"><i class="fa fa-heart"></i>
+        Whishlist</button>
+      <button onclick="additem('m12')" class="additem"><i class="fa fa-plus"></i> Add to Cart</button>
+    </div>
+    <div id="m13" class="container"><button onclick="addwish('m13')" class="additem"><i class="fa fa-heart"></i>
+        Whishlist</button>
+      <button onclick="additem('m13')" class="additem"><i class="fa fa-plus"></i> Add to Cart</button>
+    </div>
+    <div id="m14" class="container"><button onclick="addwish('m14')" class="additem"><i class="fa fa-heart"></i>
+        Whishlist</button>
+      <button onclick="additem('m14')" class="additem"><i class="fa fa-plus"></i> Add to Cart</button>
+    </div>
+    <div id="m15" class="container"><button onclick="addwish('m15')" class="additem"><i class="fa fa-heart"></i>
+        Whishlist</button>
+      <button onclick="additem('m15')" class="additem"><i class="fa fa-plus"></i> Add to Cart</button>
+    </div>
+  </div>
+
+  <h1 style="color: darkslategray" align="left">Men Party Wear</h1>
+  <div class="container1">
+    <span class="container2">
+      <span class="container">
+        <img
+          src="https://th.bing.com/th/id/R.e6cdee1023fc2f22ada74ee29e359ca7?rik=Qd9iNdH%2bMC2%2bVQ&riu=http%3a%2f%2fwww.outfittrends.com%2fwp-content%2fuploads%2f2015%2f08%2fparty-outfits-for-men10.jpg&ehk=4ZydKn5HLNEFCo2KBafyWcESciJt%2b8o3gxaH52sq2cM%3d&risl=&pid=ImgRaw&r=0"
+          alt="Avatar" class="image" />
+        <div class="overlay">
+          <div class="text">
+            MRP - <strike style="color: red">1400</strike><span style="color: green">
+              <b>&#x20B9;999</b></span><br />flat 28.64%
+            off
+          </div>
+        </div>
+      </span></span>
+    <span class="container2">
+      <span class="container">
+        <img
+          src="https://www.stylesgap.com/wp-content/uploads/2016/06/Eden-Robe-Men-Party-Wear-Formal-Coat-Pant-Suits-Collection-1.jpg"
+          alt="Avatar" class="image" />
+        <div class="overlay">
+          <div class="text">
+            MRP - <strike style="color: red">1800</strike><span style="color: green">
+              <b>&#x20B9;1600</b></span><br />flat
+            11.11% off
+          </div>
+        </div>
+      </span></span>
+    <span class="container2">
+      <span class="container">
+        <img src="https://cdn14.nnnow.com/web-images/large/styles/B0PVTSFCSQZ/1666173330691/1.jpg" alt="Avatar"
+          class="image" />
+        <div class="overlay">
+          <div class="text">
+            MRP - <strike style="color: red">1100</strike><span style="color: green">
+              <b>&#x20B9;1050</b></span><br />flat 4.54%
+            off
+          </div>
+        </div>
+      </span></span>
+    <span class="container2">
+      <span class="container">
+        <img src="https://dresseskhazana.com/wp-content/uploads/2017/06/Black-suit-with-waistcoat-for-boys.jpg"
+          alt="Avatar" class="image" />
+        <div class="overlay">
+          <div class="text">
+            MRP - <strike style="color: red">1900</strike><span style="color: green">
+              <b>&#x20B9;1550</b></span><br />flat
+            18.42% off
+          </div>
+        </div>
+      </span></span>
+    <span class="container2">
+      <span class="container">
+        <img src="https://i.pinimg.com/originals/8d/74/79/8d747949bf3f545bdff997e893b64f3d.jpg" alt="Avatar"
+          class="image" />
+        <div class="overlay">
+          <div class="text">
+            MRP - <strike style="color: red">2000</strike><span style="color: green">
+              <b>&#x20B9;1850</b></span><br />flat 7.5%
+            off
+          </div>
+        </div>
+      </span>
+    </span>
+  </div>
+
+  <div class="container1">
+    <div id="m21" class="container"><button onclick="addwish('m21')" class="additem"><i class="fa fa-heart"></i>
+        Whishlist</button>
+      <button onclick="additem('m21')" class="additem"><i class="fa fa-plus"></i> Add to Cart</button>
+    </div>
+    <div id="m22" class="container"><button onclick="addwish('m22')" class="additem"><i class="fa fa-heart"></i>
+        Whishlist</button>
+      <button onclick="additem('m22')" class="additem"><i class="fa fa-plus"></i> Add to Cart</button>
+    </div>
+    <div id="m23" class="container"><button onclick="addwish('m23')" class="additem"><i class="fa fa-heart"></i>
+        Whishlist</button>
+      <button onclick="additem('m23')" class="additem"><i class="fa fa-plus"></i> Add to Cart</button>
+    </div>
+    <div id="m24" class="container"><button onclick="addwish('m24')" class="additem"><i class="fa fa-heart"></i>
+        Whishlist</button>
+      <button onclick="additem('m24')" class="additem"><i class="fa fa-plus"></i> Add to Cart</button>
+    </div>
+    <div id="m25" class="container"><button onclick="addwish('m25')" class="additem"><i class="fa fa-heart"></i>
+        Whishlist</button>
+      <button onclick="additem('m25')" class="additem"><i class="fa fa-plus"></i> Add to Cart</button>
+    </div>
+  </div>
+
+  <h1 style="color:darkslategray" align="left">Men Jeans Fashions</h1>
+  <div class="container1">
+    <span class="container2"><span class="container">
+        <img
+          src="https://th.bing.com/th/id/R.47dd18514909ced871639d0fbbe7d328?rik=BYf2vLj7syte1A&riu=http%3a%2f%2fwww.warehouseone.com%2fon%2fdemandware.static%2f-%2fSites-master-catalog%2fdefault%2fdw5bf54fec%2fwho%2f1110106363%7e090%7e1.jpg&ehk=b3QCsYlOAHDKku7Rtm9foBKYZlWfja0vJizsl6e9MWs%3d&risl=&pid=ImgRaw&r=0"
+          alt="Avatar" class="image">
+        <div class="overlay">
+          <div class="text">MRP - <strike style="color:red">1400</strike><span style="color:green">
+              <b>&#x20B9;999</b></span><br>flat
+            28.64%
+            off</div>
+        </div>
+      </span>
+    </span>
+    <span class="container2"><span class="container">
+        <img
+          src="https://th.bing.com/th/id/R.949d83f51d8e9cac663d8a01994d0a61?rik=Ur2Mvl5Qx8E7Ew&riu=http%3a%2f%2fthejeansblog.com%2fwp-content%2fuploads%2f2015%2f12%2ftopman-spray-on-skinny-jeans.jpg&ehk=qwfWZrYC5qWOA8V5cqmo6Hm8dd78OxHprlDP%2bWsOxHw%3d&risl=&pid=ImgRaw&r=0"
+          alt="Avatar" class="image">
+        <div class="overlay">
+          <div class="text">MRP - <strike style="color:red">1800</strike><span style="color:green">
+              <b>&#x20B9;1600</b></span><br>flat
+            11.11% off</div>
+        </div>
+      </span>
+    </span>
+    <span class="container2"><span class="container">
+        <img src="https://i1.adis.ws/i/jpl/sc_186176_a?qlt=60&w=600&h=727&v=1" alt="Avatar" class="image">
+        <div class="overlay">
+          <div class="text">MRP - <strike style="color:red">1100</strike><span style="color:green">
+              <b>&#x20B9;1050</b></span><br>flat
+            4.54%
+            off</div>
+        </div>
+      </span>
+    </span>
+    <span class="container2"><span class="container">
+        <img
+          src="https://th.bing.com/th/id/R.7823b45315fb3e7a031bd28583da48a1?rik=AWIO4S%2bXNmeXVg&riu=http%3a%2f%2fwww.peimag.com%2fwp-content%2fuploads%2f2017%2f03%2ffont-b-Men-b-font-black-font-b-jeans-b-font-stretch-slim-fit-man.jpg&ehk=ttrf5WJ%2bLy%2bDpJiw3zf8r4UMZOrg9oL1QtkZCMO2tqU%3d&risl=&pid=ImgRaw&r=0"
+          alt="Avatar" class="image">
+        <div class="overlay">
+          <div class="text">MRP - <strike style="color:red">1900</strike><span style="color:green">
+              <b>&#x20B9;1550</b></span><br>flat
+            18.42% off</div>
+        </div>
+      </span>
+    </span>
+    <span class="container2"><span class="container">
+        <img src="https://i.pinimg.com/originals/2d/72/16/2d7216f5b645be39bb867bbb1ed70bfb.jpg" alt="Avatar"
+          class="image">
+        <div class="overlay">
+          <div class="text">MRP - <strike style="color:red">2000</strike><span style="color:green">
+              <b>&#x20B9;1850</b></span><br>flat
+            7.5%
+            off</div>
+        </div>
+      </span>
+    </span>
+  </div>
+
+  <div class="container1">
+    <div id="m31" class="container"><button onclick="addwish('m31')" class="additem"><i class="fa fa-heart"></i>
+        Whishlist</button>
+      <button onclick="additem('m31')" class="additem"><i class="fa fa-plus"></i> Add to Cart</button>
+    </div>
+    <div id="m32" class="container"><button onclick="addwish('m32')" class="additem"><i class="fa fa-heart"></i>
+        Whishlist</button>
+      <button onclick="additem('m32')" class="additem"><i class="fa fa-plus"></i> Add to Cart</button>
+    </div>
+    <div id="m33" class="container"><button onclick="addwish('m33')" class="additem"><i class="fa fa-heart"></i>
+        Whishlist</button>
+      <button onclick="additem('m33')" class="additem"><i class="fa fa-plus"></i> Add to Cart</button>
+    </div>
+    <div id="m34" class="container"><button onclick="addwish('m34')" class="additem"><i class="fa fa-heart"></i>
+        Whishlist</button>
+      <button onclick="additem('m34')" class="additem"><i class="fa fa-plus"></i> Add to Cart</button>
+    </div>
+    <div id="m35" class="container"><button onclick="addwish('m35')" class="additem"><i class="fa fa-heart"></i>
+        Whishlist</button>
+      <button onclick="additem('m35')" class="additem"><i class="fa fa-plus"></i> Add to Cart</button>
+    </div>
+  </div>
+
+  <h1 style="color:darkslategray" align="left">Men Best Kurthas</h1>
+  <div class="container1">
+    <span class="container2"><span class="container">
+        <img src="https://i.pinimg.com/originals/e5/02/1b/e5021b8a91f3a5f285e57541ab7cd4b5.jpg" alt="Avatar"
+          class="image">
+        <div class="overlay">
+          <div class="text">MRP - <strike style="color:red">1100</strike><span style="color:green">
+              <b>&#x20B9;1050</b></span><br>flat
+            4.54%
+            off</div>
+        </div>
+      </span>
+    </span>
+    <span class="container2"><span class="container">
+        <img
+          src="https://1.bp.blogspot.com/-nm3aVvlJIH4/WH_nyZvAffI/AAAAAAAAFL0/XimesyK_X3EZPq9asMjvRRYy3tu0t9F1wCLcB/s1600/orient-textile-exclusive-men-waistcoats-kurta-shalwar-collection-2017%2B%25281%2529.jpg"
+          alt="Avatar" class="image">
+        <div class="overlay">
+          <div class="text">MRP - <strike style="color:red">1900</strike><span style="color:green">
+              <b>&#x20B9;1550</b></span><br>flat
+            18.42% off</div>
+        </div>
+      </span>
+    </span>
+    <span class="container2"><span class="container">
+        <img src="https://th.bing.com/th/id/OIP.9665OInu25GemAVPqeV0YgHaNV?pid=ImgDet&w=711&h=1280&rs=1" alt="Avatar"
+          class="image">
+        <div class="overlay">
+          <div class="text">MRP - <strike style="color:red">900</strike><span style="color:green">
+              <b>&#x20B9;750</b></span><br>flat
+            16.66%
+            off</div>
+        </div>
+      </span>
+    </span>
+    <span class="container2"><span class="container">
+        <img src="https://www.qarotmen.com/uploads/qarot/products/184a0949-775800_l.jpg" alt="Avatar" class="image">
+        <div class="overlay">
+          <div class="text">MRP - <strike style="color:red">1200</strike> <span style="color:green"><b>
+                &#x20B9;800</b></span>
+            <br>flat 33.33% off
+          </div>
+        </div>
+      </span>
+    </span>
+    <span class="container2">
+      <span class="container">
+        <img src="https://i.pinimg.com/originals/5c/0f/9a/5c0f9a2b834bad56531e5ac53456260a.jpg" alt="Avatar"
+          class="image">
+        <div class="overlay">
+          <div class="text">MRP - <strike style="color:red">1500</strike><span style="color:green">
+              <b>&#x20B9;650</b></span><br>flat
+            60%
+            off</div>
+        </div>
+      </span>
+    </span>
+  </div>
+
+  <div class="container1">
+    <div id="m41" class="container"><button onclick="addwish('m41')" class="additem"><i class="fa fa-heart"></i>
+        Whishlist</button>
+      <button onclick="additem('m41')" class="additem"><i class="fa fa-plus"></i> Add to Cart</button>
+    </div>
+    <div id="m42" class="container"><button onclick="addwish('m42')" class="additem"><i class="fa fa-heart"></i>
+        Whishlist</button>
+      <button onclick="additem('m42')" class="additem"><i class="fa fa-plus"></i> Add to Cart</button>
+    </div>
+    <div id="m43" class="container"><button onclick="addwish('m43')" class="additem"><i class="fa fa-heart"></i>
+        Whishlist</button>
+      <button onclick="additem('m43')" class="additem"><i class="fa fa-plus"></i> Add to Cart</button>
+    </div>
+    <div id="m44" class="container"><button onclick="addwish('m44')" class="additem"><i class="fa fa-heart"></i>
+        Whishlist</button>
+      <button onclick="additem('m44')" class="additem"><i class="fa fa-plus"></i> Add to Cart</button>
+    </div>
+    <div id="m45" class="container"><button onclick="addwish('m45')" class="additem"><i class="fa fa-heart"></i>
+        Whishlist</button>
+      <button onclick="additem('m45')" class="additem"><i class="fa fa-plus"></i> Add to Cart</button>
+    </div>
+  </div>
+
+  <h1 style="color:darkslategray" align="left">Men Trendy T-Shirts</h1>
+  <div class="container1">
+    <span class="container2"><span class="container">
+        <img src="https://th.bing.com/th/id/OIP.lSnAVKtNnX4sgar7Min22QHaHa?pid=ImgDet&rs=1" alt="Avatar" class="image">
+        <div class="overlay">
+          <div class="text">MRP - <strike style="color:red">1400</strike><span style="color:green">
+              <b>&#x20B9;999</b></span><br>flat
+            28.64%
+            off</div>
+        </div>
+      </span>
+    </span>
+    <span class="container2"><span class="container">
+        <img src="https://th.bing.com/th/id/OIP.lBUVT1c1Xb4MLoS26p2JaAHaHa?pid=ImgDet&rs=1" alt="Avatar" class="image">
+        <div class="overlay">
+          <div class="text">MRP - <strike style="color:red">1800</strike><span style="color:green">
+              <b>&#x20B9;1600</b></span><br>flat
+            11.11% off</div>
+        </div>
+      </span>
+    </span>
+    <span class="container2"><span class="container">
+        <img src="https://i.pinimg.com/736x/a2/3c/9d/a23c9dde623ab10c7528130b1513e54a--printed.jpg" alt="Avatar"
+          class="image">
+        <div class="overlay">
+          <div class="text">MRP - <strike style="color:red">1100</strike><span style="color:green">
+              <b>&#x20B9;1050</b></span><br>flat
+            4.54%
+            off</div>
+        </div>
+      </span></span>
+    <span class="container2"><span class="container">
+        <img
+          src="https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1642840274_6868744.jpg?format=webp&w=480&dpr=1.3"
+          alt="Avatar" class="image">
+        <div class="overlay">
+          <div class="text">MRP - <strike style="color:red">1900</strike><span style="color:green">
+              <b>&#x20B9;1550</b></span><br>flat
+            18.42% off</div>
+        </div>
+      </span></span>
+    <span class="container2"><span class="container">
+        <img
+          src="https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1665998396_4075115.jpg?format=webp&w=480&dpr=1.3"
+          alt="Avatar" class="image">
+        <div class="overlay">
+          <div class="text">MRP - <strike style="color:red">2000</strike><span style="color:green">
+              <b>&#x20B9;1850</b></span><br>flat
+            7.5%
+            off</div>
+        </div>
+      </span>
+    </span>
+  </div>
+
+  <div class="container1">
+    <div id="wm51" class="container"><button onclick="addwish('m51')" class="additem"><i class="fa fa-heart"></i>
+        Whishlist</button>
+      <button id="cm51" onclick="additem('m51')" class="additem"><i class="fa fa-plus"></i> Add to Cart</button>
+    </div>
+    <div id="wm52" class="container"><button onclick="addwish('m52')" class="additem"><i class="fa fa-heart"></i>
+        Whishlist</button>
+      <button id="cm52" onclick="additem('m52')" class="additem"><i class="fa fa-plus"></i> Add to Cart</button>
+    </div>
+    <div id="wm53" class="container"><button onclick="addwish('m53')" class="additem"><i class="fa fa-heart"></i>
+        Whishlist</button>
+      <button onclick="additem('m53')" class="additem"><i class="fa fa-plus"></i> Add to Cart</button>
+    </div>
+    <div id="wm54" class="container"><button onclick="addwish('m54')" class="additem"><i class="fa fa-heart"></i>
+        Whishlist</button>
+      <button onclick="additem('m54')" class="additem"><i class="fa fa-plus"></i> Add to Cart</button>
+    </div>
+    <div id="wm55" class="container"><button onclick="addwish('m55')" class="additem"><i class="fa fa-heart"></i>
+        Whishlist</button>
+      <button onclick="additem('m55')" class="additem"><i class="fa fa-plus"></i> Add to Cart</button>
+    </div>
+  </div>
+
+  <div id="ad_position_box">
+    <div class="card">
+      <div class="top-row flex-row">
+        <div class="colmun">
+          <span>Your Cart</span>
+        </div>
+        <div class="colmun">
+          <button class="report"><svg viewBox="0 0 14 24" fill="none">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M2 8C3.1 8 4 7.1 4 6C4 4.9 3.1 4 2 4C0.9 4 0 4.9 0 6C0 7.1 0.9 8 2 8ZM2 10C0.9 10 0 10.9 0 12C0 13.1 0.9 14 2 14C3.1 14 4 13.1 4 12C4 10.9 3.1 10 2 10ZM0 18C0 16.9 0.9 16 2 16C3.1 16 4 16.9 4 18C4 19.1 3.1 20 2 20C0.9 20 0 19.1 0 18Z"
+                fill="#5F6368"></path>
+            </svg></button>
+          <button class="skip"><svg viewBox="0 0 48 48" fill="#5F6368">
+              <path
+                d="M38 12.83L35.17 10 24 21.17 12.83 10 10 12.83 21.17 24 10 35.17 12.83 38 24 26.83 35.17 38 38 35.17 26.83 24z">
+              </path>
+              <path d="M0 0h48v48H0z" fill="none"></path>
+            </svg></button>
+        </div>
+      </div>
+      <div class="ad-content" id="ad-content" style="width: auto;">
+      </div>
+      <br><br>
+      <a style="text-decoration: none; font-size: 30px; margin-left: auto; margin-right: auto;" class="additem"
+        href="">Confirm</a>
+    </div>
+  </div>
+  <script>
+    $("#two").click(function () {
+      $("#ad_position_box").addClass("active");
+    });
+    $(".skip").click(function () {
+      $("#ad_position_box").removeClass("active");
+    });
+  </script>
+
+  <script src="script.js"></script>
+
+  <script>
+    var orders = sessionStorage.getItem('orders');
+    var itemsting = localStorage.getItem('orderitems');
+    var orderitems = JSON.parse(itemsting);
+    var wishes = localStorage.getItem('wishes');
+    var wishstr = localStorage.getItem('wishlist');
+    var wishlist = JSON.parse(wishstr);
+    if (wishlist == null) {
+      wishlist = [];
+    }
+    if (orderitems == null) {
+      orderitems = [];
+    }
+    ordersn = orders;
+    wishesn = wishes;
+    sessionStorage.setItem('orders', ordersn);
+    localStorage.setItem('orderitems', JSON.stringify(orderitems));
+    localStorage.setItem('wishes', wishesn);
+    localStorage.setItem('wishlist', JSON.stringify(wishlist));
+  </script>
+
+  <br><br><br>
+  <script>
+    function refreshPage() {
+      window.location.reload();
+    } 
+  </script>`
+
+</body>
+
+</html>
