@@ -14,8 +14,8 @@ Browse the collections or use the search bar to find specific items
 Add items to your cart and proceed to checkout
 Create an account or log in to an existing account to complete the purchase
 # Tech Stack
--> HTML
--> CSS
+-> HTML\n
+-> CSS\n
 -> JavaScript
 
 Contributions
