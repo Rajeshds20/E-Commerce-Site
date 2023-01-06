@@ -13,14 +13,15 @@ Navigate to the website
 Browse the collections or use the search bar to find specific items
 Add items to your cart and proceed to checkout
 Create an account or log in to an existing account to complete the purchase
-# Tech Stack
+## Tech Stack
 -> HTML
 
 -> CSS
 
 -> JavaScript
 
-Contributions
+
+## Contributions
 We welcome contributions to the Online Fashion Store website. To contribute, follow these steps:
 
 Fork the repository
