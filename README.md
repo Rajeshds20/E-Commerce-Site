@@ -20,6 +20,10 @@ Create an account or log in to an existing account to complete the purchase
 
 -> JavaScript
 
+This Website provides all the Fashion varieties and brands to look into.
+
+This makes the user to decide what to purchase. This is made only with Front-End development Tools.
+
 
 ## Contributions
 We welcome contributions to the Online Fashion Store website. To contribute, follow these steps:
